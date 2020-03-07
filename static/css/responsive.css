@@ -1,0 +1,283 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1501px) and (max-width: 1835px) {
+    .menu ul li {
+        margin-left: 52px;
+    }
+    .menu ul li a {
+        font-size: 20px;
+    }
+    .button-area a.btn {
+        font-size: 16px;
+        padding: 9px 34px;
+        margin-left: 8px;
+    }
+    .button-area a.btn:nth-child(1) {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+    .button-area {
+        text-align: right;
+        margin-top: 22px;
+    }
+
+
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    
+    .brad-cam-area h1 {
+	font-size: 55px;
+	
+}
+.brad-cam-area h2 {
+	font-size: 50px;
+	
+}
+.brad-cam-area h3 {
+	font-size: 25px;
+	color: #fff;
+	font-weight: 500;
+	margin-top: 27px;
+	margin-bottom: 25px;
+}
+.brad-cam {
+	background-size: cover;
+	height: 730px;
+	position: relative;
+}
+    
+    
+    
+    
+    
+    .menu ul li {
+        margin-left: 22px;
+    }
+    .menu ul li a {
+        font-size: 16px;
+    }
+    .button-area a.btn {
+        font-size: 11px;
+        padding: 13px 28px;
+        margin-left: 4px;
+    }
+    .button-area a.btn:nth-child(1) {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    
+    .brad-cam {
+	
+	height: 719px;
+	
+}
+    
+    .d-n {
+        display: none;
+    }
+    .button-area {
+        margin-right: 58px;
+    }
+    .brad-cam-area h1 {
+        font-size: 40px;
+    }
+    .brad-cam-area h2 {
+        font-size: 40px;
+    }
+    .brad-cam-area h3 {
+        font-size: 22px;
+    }
+    .menu-open{
+        display: block;
+    }
+    
+  
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-area {
+        display: none;
+    }
+    .menu-open{
+        display: block;
+    }
+    .button-area {
+        margin-right: 58px;
+    }
+    .button-area a.btn {
+        font-size: 13px;
+        padding: 13px 31px;
+        margin-left: 0px;
+    }
+    .d-n {
+        display: none;
+    }
+    .brad-cam-area h1 {
+	font-size: 32px;
+    }
+    .brad-cam-area h2 {
+	font-size: 32px;
+    }
+    .brad-cam-area h3 {
+	font-size: 16px;
+    }
+    .brad-cam-area h3 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .brad-cam-img {
+        top: 118px;
+    }
+    .brad-cam {
+        height: 700px;
+    }
+    h1{
+    font-size: 32px;
+    }
+    .atomic-area {
+        margin-top: 0;
+    }
+    .crypto-area {
+    padding-top: 100px;
+    margin-top: 40px;
+    background-position: center;
+    }
+    .crypto-button {
+        text-align: center;
+    }
+    .crypto-icon {
+        text-align: center;
+    }
+    .crypto-icon img {
+	margin: 10px;
+    }
+    .footer-area {
+	background-size: cover;
+	padding-top: 100px;
+	margin-top: 0;
+	background-position: center;
+    }
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .brad-cam {
+	height: 500px;
+    }
+    .menu-area {
+        display: none;
+    }
+    .menu-open{
+        display: block;
+    }
+    .button-area {
+        margin-right: 58px;
+    }
+    .d-n {
+        display: none;
+    }
+    .d-sm-n{
+        display: none;
+    }
+   .logo img {
+	width: 140px;
+}
+    .brad-cam-img {
+	display: none;
+    }
+    .brad-cam-area {
+	padding-top: 105px;
+    }
+    .brad-cam-area h1 {
+	font-size: 32px;
+    }.brad-cam-area h2 {
+	font-size: 32px;
+    }
+    .brad-cam-area h3 {
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+    }
+    .atomic-area {
+	margin-top: 0;
+    }
+    h1 {
+	font-size: 28px;
+    }
+    .crypto-button a.btn {
+	font-size: 13px;
+	margin-bottom: 21px;
+	padding: 15px 22px;
+    }
+    .crypto-button a.btn i {
+	height: 44px;
+	width: 44px;
+	line-height: 45px;
+	top: 3px;
+	right: 3px;
+	font-size: 15px;
+    }
+    .atomic-bg {
+        top: 0;
+    }
+    .atomic-bg img {
+        width: 200px;
+    }
+    .crypto-button {
+	text-align: center;
+    }
+    .crypto-icon {
+        text-align: center;
+    }
+   .crypto-icon img {
+	width: 200px;
+    }
+    .crypto-bg-img img {
+	width: 300px;
+    }
+    .footer-area {
+	margin-top: 0;
+	background-position: center top;
+    }
+    .footer-area {
+	text-align: center;
+    }
+    
+    .header-area {
+	
+	padding: 10px 0;
+}
+.brad-cam-area a.btn {
+	
+	font-size: 12px;
+
+	padding: 11px 45px;
+	
+} 
+ .footer-social-icon {
+	padding-right: 0;
+}
+    
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

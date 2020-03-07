@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="brad-cam" style="background-image: url({% static 'img/brad-cam-img/brad-cam.png' %});">
+    <div class="brad-cam-img" data-aos="fade-up">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="brad-cam-area">
+                    <h1>{{ request.path|slice:'1:'|capfirst }} CONTENT GOES HERE</h1>
+                    <h2>Path: <code>templates/core/pages{{ request.path }}.html</code></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- brad-cam area end -->
+{% endblock %}

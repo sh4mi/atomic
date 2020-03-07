@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Title Here</title>
+        <base href="{% static '/admin/' %}">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/meanmenu.css" rel="stylesheet">
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/nice-select.css" rel="stylesheet">
+        <link href="assets/css/default.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+
+        <!-- custom page style -->
+        {% block custom_style %}{% endblock %}
+    </head>
+    <body>
+
+
+        <!-- Site main wrap start -->
+        
+        {% include 'admin/partial/header.html' %}
+        
+        <!-- Site main wrap end -->
+
+        
+        <!-- Site main wrap start -->
+        
+        <div class="site-main-wrp">
+            <!-- sidebar -->
+            {% include 'admin/partial/sidebar.html' %}
+            <!-- /.sidebar -->
+
+            <div class="site-inner-main">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        
+        
+        <!-- Site main wrap end -->
+        
+        
+        
+        
+        
+        {% include 'partial/footer.html' %}
+    
+        
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/Popper.js"></script>
+        <script src="assets/js/jquery.sticky.js"></script>
+        <script src="assets/js/jquery.meanmenu.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+
+        <!-- custom page script -->
+        {% block custom_script %}{% endblock %}
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

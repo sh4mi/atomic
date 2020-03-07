@@ -1,0 +1,83 @@
+{% load static %}
+<div class="footer-area" style="background-image: url({% static 'img/footer-bg/footer-bg.png' %});">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-3 col-md-6">
+                       <div class="footer-item">
+                           <div class="footer-logo">
+                               <img src="{% static 'img/footer-icon/footer-logo.png' %}" alt="">
+                           </div>
+                           <p>© 2020. Atomic All Rights Reserved</p>
+                           <div class="footer-social-icon">
+                               <a href="#"><i class="fas fa-paper-plane"></i></a>
+                               <a href="#"><i class="fab fa-weixin"></i></a>
+                               <a href="#"><i class="fab fa-discord"></i></a>
+                               <a href="#"><i class="fab fa-twitter"></i></a>
+                               <a href="#"><i class="fab fa-facebook-f"></i></a>
+                               <a href="#"><i class="fab fa-youtube"></i></a>
+                           </div>
+                           <div class="privacy-text">
+                               <span><a href="{% url 'privacy' %}">Privacy Policy</a></span>
+                               <span><a href="{% url 'tnc' %}">Terms and Conditions</a></span>
+                               <span><a href="{% url 'gdpr' %}">GDPR</a></span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-3 col-md-6">
+                       <div class="footer-item">
+                           <h3>Product</h3>
+                           <ul>
+                               <li><a href="{% url 'mining_pools' %}">Mining Pools</a></li>
+                               <li><a href="{% url 'hash_market' %}">Hash Market</a></li>
+                               <li><a href="{% url 'staking_pools' %}">Staking Pools</a></li>
+                               <li><a href="{% url 'statistics' %}">Statistics</a></li>
+                               <li><a href="{% url 'my_account' %}">My Account</a></li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="col-xl-3 col-md-6">
+                    <div class="footer-item">
+                        <h3>Knowledge</h3>
+                        <ul>
+                            <li><a href="{% url 'getting_started' %}">Getting Started</a></li>
+                            <li><a href="{% url 'how_to_mine' %}">How to Mine</a></li>
+                            <li><a href="{% url 'how_to_buy' %}">How to Buy Hashing</a></li>
+                            <li><a href="{% url 'how_to_stake' %}">How to Stake</a></li>
+                            <li><a href="{% url 'atomic_swaps' %}">Atomic Swaps</a></li>
+                            <li><a href="{% url 'announcements' %}">Announcements</a></li>
+                            <li><a href="{% url 'faq' %}">FAQ</a></li>
+                        </ul>
+                    </div>
+                   </div>
+                   <div class="col-xl-3 col-md-6">
+                    <div class="footer-item">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><a href="{% url 'about_us' %}">About Us</a></li>
+                            <li><a href="{% url 'careers' %}">Careers</a></li>
+                            <li><a href="{% url 'partners' %}">Partners</a></li>
+                            <li><a href="{% url 'open_a_ticket' %}">Open a Ticket</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                   </div>
+               </div>
+           </div>
+           <div class="footer-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-menu">
+                             <ul>
+                                 <li><a href="{% url 'visit_out_friends' %}">Visit our friends :</a></li>
+                                 <li><a href="{% url 'alpha_vertical' %}">Alpha Vertical</a></li>
+                                 <li><a href="{% url 'atlash' %}">Atlas</a></li>
+                                 <li><a href="{% url 'swan_bitcoin' %}">Swan Bitcoin</a></li>
+                                 <li><a href="{% url 'blockchain_inst' %}">Blockchain Institute</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>

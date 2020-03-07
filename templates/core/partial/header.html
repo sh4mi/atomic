@@ -1,0 +1,61 @@
+{% load static %}
+<div class="header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4">
+                <div class="logo">
+                    <img src="{% static 'img/logo/logo.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-xl-7 d-n">
+                <div class="menu-area">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12">
+                         <div class="menu-top text-center">
+                             <span>17.09.2020</span>
+                             <span>13:25:59</span>
+                         </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-xl-12">
+                         <div class="menu text-center">
+                             <ul>
+                                 <li><a href="#"><span>₿</span> BTC</a></li>
+                                 <li><a href="#">5.068Eh/s</a></li>
+                                 <li><a href="#">$9651.13</a></li>
+                                 <li><a href="#">£7415.51</a></li>
+                                 <li><a href="#">€8906.34</a></li>
+                                 <li><a href="#">¥673775</a></li>
+                             </ul>
+                         </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-8 col-md-8">
+                <div class="button-area d-sm-n">
+                    <a href="#" class="btn"><i class="far fa-search"></i></a>
+                    <a href="{% url 'login' %}" class="btn">SIGN IN</a>
+                    <a href="{% url 'register' %}" class="btn">SIGN UP</a>
+                </div>
+            </div>
+            <div class="menu-open-btn">
+                    <span class="menu-open"><i class="fal fa-align-right"></i></span>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="off-canvas-overlay"></div>
+<div class="off-canvas-menu">
+    <span class="close-icon"><i class="fal fa-window-close"></i></span>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Other</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+</div>
+<!-- brad-cam area -->

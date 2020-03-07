@@ -1,0 +1,731 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: 
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer 
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+ body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-style: normal;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.img {
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat';
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 50px;
+	font-weight: 400;
+	color: #283350;
+}
+h1 span{
+	color: #ffb500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #283350;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-webkit-input-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+
+}
+
+.btn:hover {
+}
+.btn.btn-large {
+	padding: 13px 25px;
+}
+.btn-lg {
+	font-weight: 700;
+	padding: 13px 31px;
+}
+.btn.white-btn:hover {
+	border-color: #ddd;
+	color: #ddd
+}
+.btn.btn-base.btn-link {
+	background: transparent none repeat scroll 0 0;
+	border: 0 none;
+	color: #1696e7;
+	padding: 0;
+	text-decoration: none;
+}
+.btn.btn-base.btn-link:hover {
+	color: #106fab;
+}
+.theme-bg {
+	background: #1696e7
+}
+.bg-white {
+	background-color: #ffffff;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+
+.at-icon-inner {
+  width: 110px;
+  height: 110px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+.at-icon-inner span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transfs: ;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  line-height: 80px;
+  -webkit-box-shadow: 0 0 19px #99bdf0bf;
+  box-shadow: 0 0 19px #99bdf0bf;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.atomic-item:hover span.at-icon img {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+.atomic-item:hover .at-icon {
+  background: #ffb500;
+  -webkit-box-shadow: 0 0 10px #ffb50099;
+  box-shadow: 0 0 10px #ffb50099;
+}
+.atomic-item:hover a.btn {
+  background: #ffb500;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px #ffb50099;
+  box-shadow: 0 0 10px #ffb50099;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+.owl-dots {
+	position: absolute;
+	bottom: 86px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.owl-dots button.owl-dot {
+	height: 10px;
+	width: 10px;
+	background: transparent;
+	margin: 0 4px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+}
+.owl-dots button.owl-dot.active {
+	background: #00E0D0;
+	border-color: #00E0D0;
+}
+/* Theme default css end */
+
+/* header-area */
+.header-area {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	border-bottom: 1px solid #a9b0bf;
+}
+.header-area .container {
+	max-width: 1845px;
+}
+.menu ul li {
+	display: inline-block;
+	margin-left: 60px;
+}
+.menu ul li a {
+	color: #fff;
+	font-size: 20px;
+}
+.menu ul li a span {
+	background: #fff;
+	color: #000;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	border-radius: 50%;
+	line-height: 30px;
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+	font-weight: 600;
+}
+.menu-top {
+	margin-top: 13px;
+}
+.menu-top span {
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	margin: 0 15px;
+}
+.button-area {
+	text-align: right;
+	margin-top: 15px;
+}
+
+.button-area a.btn {
+	color: #283350;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 45px;
+	border-radius: 30px;
+	background: #ffb500;
+	margin-left: 18px;
+}
+.button-area a.btn:nth-child(1) {
+	background: #fff;
+	color: #f94815;
+	font-size: 22px;
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.button-area a.btn:nth-child(3) {
+	background: #f93800;
+	color: #fff;
+}
+
+.off-canvas-menu {
+	background: #333;
+	position: fixed;
+	width: 350px;
+	height: 100%;
+	z-index: 99999;
+	padding-top: 24px;
+	margin-left: -350px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.off-canvas-menu.active {
+    margin-left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.off-canvas-menu ul li a {
+    color: #fff;
+    padding: 15px 30px;
+    display: block;
+}
+
+.off-canvas-menu ul li {
+    border: 1px solid rgba(255, 2500, 255, .1);
+}
+
+.off-canvas-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+.off-canvas-overlay.active {
+	opacity: .6;
+	z-index: 9888;
+}
+
+.off-canvas-menu span i {
+	color: #fff;
+	float: right;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 31px;
+}
+
+.off-canvas-menu ul {
+    margin-top: 95px;
+}
+.menu-open-btn {
+	display: inline-block;
+	position: absolute;
+	top: 26px;
+	right: 15px;
+}
+.menu-open-btn span i {
+	color: #fff;
+	font-size: 27px;
+}
+.menu-open{
+	display: none;
+}
+/* header-area end */
+
+/* brad-cam-area */
+.brad-cam {
+	background-size: cover;
+	height: 919px;
+	position: relative;
+}
+
+.brad-cam-img {
+	position: absolute;
+	right: 0;
+	top: 68px;
+	width: 40%;
+}
+.brad-cam-img img {
+	width: 100%;
+}
+.brad-cam-area {
+	padding-top: 246px;
+}
+.brad-cam-area h1 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+}
+.brad-cam-area h2 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #f93800;
+	text-decoration: underline;
+}
+.brad-cam-area h3 {
+	font-size: 30px;
+	color: #fff;
+	font-weight: 500;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+.brad-cam-area a.btn {
+	color: #283350;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 45px;
+	border-radius: 30px;
+	background: #ffb500;
+}
+/* brad-cam-area end */
+
+/* atomic-area */
+.atomic-area {
+	position: relative;
+	margin-top: 300px;
+}
+.atomic-title {
+	margin-bottom: 50px;
+}
+.atomic-bg {
+	position: absolute;
+	top: -260px;
+	left: 78px;
+}
+.atomic-text h4 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #283350;
+	margin-bottom: 10px;
+}
+.atomic-item {
+	background: #f3f8ff;
+	padding-bottom: 40px;
+	padding: 40px 14px;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	min-height: 450px;
+}
+.atomic-item:hover {
+	border: 1px solid #ffb500;
+	-webkit-box-shadow: 0px 3px 23px 0px rgba(255, 181, 0, 0.21);
+	box-shadow: 0px 3px 23px 0px rgba(255, 181, 0, 0.21);
+}
+.atomic-icon {
+	margin-bottom: 20px;
+}
+.atomic-text a.btn {
+	font-size: 20px;
+	color: #f94611;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background: #fff;
+	border-radius: 50%;
+	line-height: 37px;
+	text-align: center;
+	margin-top: 5px;
+}
+.atomic-text a.btn:hover {
+	color: #fff;
+	background: #ffb500;
+}
+/* atomic-area end */
+/* crypto area */
+.crypto-title {
+	margin-bottom: 60px;
+}
+.crypto-button a.btn {
+	font-size: 20px;
+	font-weight: 700;
+	color: #283350;
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 40px;
+	position: relative;
+	border: 1px solid #ddd;
+	border-radius: 44px;
+	padding: 27px 27px;
+	width: 68%;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.crypto-button a.btn:hover {
+	background: #ffb500;
+	color: #fff;
+
+}
+.crypto-button a.btn:hover i {
+	background: #fff;
+	color: #ffb500;
+
+}
+.crypto-button a.btn i {
+	color: #f93800;
+	display: inline-block;
+	height: 77px;
+	width: 77px;
+	background: #fee1d9;
+	line-height: 77px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	right: 4px;
+	font-size: 25px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.crypto-icon img {
+	margin-bottom: 30px;
+}
+.crypto-area {
+	background-size: cover;
+	padding-top: 130px;
+	margin-top: 120px;
+	position: relative;
+	background-position: center;
+}
+.crypto-bg-img{
+	position: absolute;
+}
+.crypto-bg-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+/* crypto area end */
+
+/* footer-area */
+.footer-area {
+	background-size: cover;
+	padding-top: 150px;
+	margin-top: 150px;
+}
+.footer-item p {
+	color: #fff;
+}
+.footer-social-icon a {
+	color: #fff;
+	font-size: 25px;
+	background: #0c1534;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+}
+.privacy-text span {
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	font-size: ;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+.footer-item h3 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.footer-item ul li a {
+	color: #b7b7b7;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 16px;
+	display: block;
+}
+.footer-item ul li a:hover {
+	color: #ffb500;
+}
+.footer-menu {
+	text-align: center;
+}
+.footer-menu ul li {
+	display: inline-block;
+	margin: 0px 20px;
+}
+.footer-menu ul li a {
+	color: #fff;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	font-size: 16px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-menu ul li a:hover {
+	color: #ffb500;
+	text-decoration: underline;
+}
+.footer-menu-area {
+	border-top: 1px solid #505563;
+	padding: 34px 0;
+	margin-top: 50px;
+}
+.footer-social-icon {
+	padding-right: 50px;
+}
+.footer-social-icon a {
+	margin-bottom: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.footer-social-icon a:hover {
+	background: #ffb500;
+}
+.footer-item p {
+	color: #fff;
+	font-size: 14px;
+	margin-top: 10px;
+}
+/* footer-area end */
+
+
+/* scroll-up */
+#scrollUp {
+	background: #ff5b5b;
+	height: 60px;
+	width: 60px;
+	right: 20px;
+	bottom: 20px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 59px;
+}
+#scrollUp:hover{
+	background: rgb(34, 100, 224);
+}
+/* scroll-up end*/
