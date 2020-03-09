@@ -1,1 +1,1 @@
-web: gunicorn myspecialist_project.wsgi --log-file -
+web: gunicorn atomic_mine.wsgi --log-file -
