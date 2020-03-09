@@ -1,0 +1,1 @@
+web: gunicorn myspecialist_project.wsgi --log-file -
